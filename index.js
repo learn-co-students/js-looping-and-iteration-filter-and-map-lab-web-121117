@@ -4,7 +4,7 @@
  }
 
 function driverNamesWithRevenueOver(drivers, rev) {
-  let newDrivers = drivers.filter(function(person) {return person.revenue >= rev})
+  let newDrivers = driversWithRevenueOver(drivers, rev)
   return newDrivers.map(function(person) {return person.name})
 }
 
